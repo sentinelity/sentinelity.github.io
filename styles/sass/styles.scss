@@ -1,0 +1,268 @@
+// Import Bootstrap Compass Integration
+@import "bootstrap-compass";
+@import "compass/css3";
+// Import Partials
+@import "_partials/bootstrap-variables";
+@import "_partials/jquery.fullPage";
+@import "_partials/animate";
+@import "_partials/animations";
+@import "_partials/nav-responsive";
+@import "_partials/panel";
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+$colorOne: #E74C3C;
+$colorTwo: #FAFAFA;
+$colorThree: #292929;
+$colorFour: #FFFFFF;
+
+//---------- GENERAL
+
+html,body {
+  color: $colorThree;
+  font-family: 'Merriweather', serif;
+  font-size: 13px;
+  height: 100%;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    vertical-align: middle;
+}
+.section {
+    background-image: url('../../images/build/noise.png');
+    background-repeat: repeat;   
+}
+#top, #bottom, #left, #right {
+	background: $colorFour;
+	position: fixed;
+    z-index: 999;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+.init-everything {
+  %title {
+    letter-spacing: 0.5px;
+    color: $colorOne;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;  
+  }
+  h1 {
+    @extend %title;
+    font-size: 56px;
+  }
+  h2 {
+    @extend %title;
+    font-size: 36px;
+  }
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: $colorFour;
+    font-size: 60px;
+  }
+  p {
+    padding-top: 20px;
+    color: $colorThree;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 13px;
+  }
+}
+  .aboutSpace {
+    letter-spacing: 3px;
+  }
+  .workSpace {
+    letter-spacing: 2px;
+  }
+.btn {
+    border-radius: 0;
+}
+.btn-gallery {
+    background-color: transparent;
+    &:hover {
+     color: $colorOne;
+     border-color: transparent;
+    }
+    a {
+     color: $colorThree;
+     text-decoration: none;
+     display: block;
+     width: 200px;
+     padding: 11px;
+     border: 1px solid $colorOne;
+     @include transition(all 0.7s ease);
+    &:hover {
+     text-decoration: none;
+     color: $colorOne;
+     background-color: $colorFour;
+    }
+    }
+}
+.pointer {
+   display:block;
+   width:30px;
+   font-size: 30px;
+   height: 100%;
+   margin: 0 auto;
+   color: $colorOne;
+   text-decoration: none;
+   @include transition(color 0.7s ease);
+   &:hover {
+    color: $colorFour;
+   }
+}
+   a:hover {
+     text-decoration: none;  
+   }
+.fix {
+ visibility: hidden;   
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+//---------- NAVIGATION
+
+.nav-temper {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+    h1 {
+      color: $colorTwo;
+      font-size: 20px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid $colorTwo;
+    }
+    ul {
+       list-style-type: none;
+       padding: 0;
+    }
+    li > a {
+        color: $colorTwo;
+        text-decoration: none;
+        text-align: center;
+        font-size: 50px;
+        padding: 20px 0;
+        @include transition(color 0.7s ease);
+        &:hover {
+          color: $colorOne;
+        }
+    }
+}
+.cd-nav-trigger:hover {
+     @include transform(rotate(180deg));
+}
+.cd-nav-icon {
+        @include transition(background-color 0.5s ease);
+        &:hover {
+          background-color: $colorTwo;
+          display: block;
+        }
+}
+
+//---------- PART-INTRO
+
+.part-intro {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.scene {
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+.intro:nth-child(1) {
+  opacity: 1;
+}
+.intro:nth-child(2) {
+  opacity: 0.90;
+}
+.intro:nth-child(3) {
+  opacity: 0.95;
+}
+
+//---------- PART-ABOUT
+
+%setDivider {
+    width:100vw;
+    height:100vh;
+}
+.shapeDivider1 {
+    @extend %setDivider;
+    background: url('../../images/build/noise.png') repeat, linear-gradient(to right, #E6E7E8 0%,#E6E7E8 50%, #FAFAFA 50%, #FAFAFA 100%);
+}
+
+//---------- PART-WORK
+
+.shapeDivider2 {
+    @extend %setDivider;
+    background: url('../../images/build/noise.png') repeat, linear-gradient(to right, #FAFAFA 0%,#FAFAFA 50%, #E6E7E8 50%, #E6E7E8 100%);
+}
+.img-gal {
+ width: 60%;
+ padding-bottom: 20px;
+}
+
+//---------- PART-CONTACT
+
+.contactIcon {
+   display:block;
+   width:40px;
+   font-size: 40px;
+   height: 100%;
+   margin: 0 auto;
+   color: $colorThree;
+   padding: 30px 0;
+}
+
+//---------- MEDIA QUERIES
+
+@media (max-width: 767px) {
+    .shapeDivider1, .shapeDivider2 {
+        background: transparent;
+    }
+    #top, #bottom, #left, #right { display: none; }
+    .fp-controlArrow.fp-next {
+        right: 10px;
+    }
+    .fp-controlArrow.fp-prev { 
+        left: 10px;
+    }
+}

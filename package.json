@@ -1,0 +1,25 @@
+{
+  "name": "kellyWongFinal",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/"
+  },
+  "keywords": [
+    "/"
+  ],
+  "author": "sentinelity",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
