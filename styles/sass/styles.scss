@@ -30,11 +30,21 @@ html,body {
 .col-centered {
     display:inline-block;
     float:none;
-    /* reset the text-align */
     text-align:left;
-    /* inline-block space fix */
     margin-right:-4px;
     vertical-align: middle;
+}
+.fix {
+ visibility: hidden;   
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 .section {
     background-image: url('../../images/build/noise.png');
@@ -91,64 +101,6 @@ html,body {
     font-weight: 300;
     font-size: 13px;
   }
-}
-  .aboutSpace {
-    letter-spacing: 3px;
-  }
-  .workSpace {
-    letter-spacing: 2px;
-  }
-.btn {
-    border-radius: 0;
-}
-.btn-gallery {
-    background-color: transparent;
-    &:hover {
-     color: $colorOne;
-     border-color: transparent;
-    }
-    a {
-     color: $colorThree;
-     text-decoration: none;
-     display: block;
-     width: 200px;
-     padding: 11px;
-     border: 1px solid $colorOne;
-     @include transition(all 0.7s ease);
-    &:hover {
-     text-decoration: none;
-     color: $colorOne;
-     background-color: $colorFour;
-    }
-    }
-}
-.pointer {
-   display:block;
-   width:30px;
-   font-size: 30px;
-   height: 100%;
-   margin: 0 auto;
-   color: $colorOne;
-   text-decoration: none;
-   @include transition(color 0.7s ease);
-   &:hover {
-    color: $colorFour;
-   }
-}
-   a:hover {
-     text-decoration: none;  
-   }
-.fix {
- visibility: hidden;   
-}
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
 }
 
 //---------- NAVIGATION
@@ -217,6 +169,22 @@ img {
 .intro:nth-child(3) {
   opacity: 0.95;
 }
+.pointer {
+   display:block;
+   width:30px;
+   font-size: 30px;
+   height: 100%;
+   margin: 0 auto;
+   color: $colorOne;
+   text-decoration: none;
+   @include transition(color 0.7s ease);
+   &:hover {
+    color: $colorFour;
+   }
+}
+.pointer a:hover {
+   text-decoration: none;  
+}
 
 //---------- PART-ABOUT
 
@@ -228,6 +196,9 @@ img {
     @extend %setDivider;
     background: url('../../images/build/noise.png') repeat, linear-gradient(to right, #E6E7E8 0%,#E6E7E8 50%, #FAFAFA 50%, #FAFAFA 100%);
 }
+.aboutSpace {
+  letter-spacing: 3px;
+}
 
 //---------- PART-WORK
 
@@ -235,9 +206,56 @@ img {
     @extend %setDivider;
     background: url('../../images/build/noise.png') repeat, linear-gradient(to right, #FAFAFA 0%,#FAFAFA 50%, #E6E7E8 50%, #E6E7E8 100%);
 }
-.img-gal {
- width: 60%;
- padding-bottom: 20px;
+.workSpace {
+  letter-spacing: 2px;
+}
+.btn {
+    border-radius: 0;
+}
+.btn-gallery {
+    background-color: transparent;
+    text-align: center;
+    &:hover {
+     color: $colorOne;
+     border-color: transparent;
+    }
+    a {
+     color: $colorThree;
+     text-decoration: none;
+     display: inline-block;
+     width: 200px;
+     padding: 11px;
+     border: 1px solid $colorOne;
+     z-index: 999;
+     @include transition(all 0.7s ease);
+      &:hover {
+        text-decoration: none;
+        color: $colorOne;
+        background-color: $colorFour;
+      }
+    }
+}
+.effect3 a {
+	color: #c1add8;
+	overflow: hidden;
+	padding: 0 5px;
+	height: 1em;
+}
+.effect3 a span {
+	position: relative;
+	display: inline-block;
+    @include transition(transform 0.3s);
+}
+.effect3 a span::before {
+	color: #440e62;
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+    @include transform(translate3d(0,0,0));
+}
+.effect3 a:hover span,
+.effect3 a:focus span {
+    @include transform(translateY(-100%));
 }
 
 //---------- PART-CONTACT
