@@ -13698,55 +13698,56 @@ img {
 /* line 181, ../sass/styles.scss */
 .pointer:hover {
   color: #FFFFFF;
+  text-decoration: none;
 }
 
-/* line 185, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 .pointer a:hover {
   text-decoration: none;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .shapeDivider1, .shapeDivider2 {
   width: 100vw;
   height: 100vh;
 }
 
-/* line 195, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .shapeDivider1 {
   background: url("../../images/build/noise.png") repeat, linear-gradient(to right, #e6e7e8 0%, #e6e7e8 50%, #fafafa 50%, #fafafa 100%);
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .aboutSpace {
   letter-spacing: 3px;
 }
 
-/* line 205, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .shapeDivider2 {
   background: url("../../images/build/noise.png") repeat, linear-gradient(to right, #fafafa 0%, #fafafa 50%, #e6e7e8 50%, #e6e7e8 100%);
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .workSpace {
   letter-spacing: 2px;
 }
 
-/* line 212, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 .btn {
   border-radius: 0;
 }
 
-/* line 215, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .btn-gallery {
   background-color: transparent;
   text-align: center;
 }
-/* line 218, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .btn-gallery:hover {
   color: #E74C3C;
   border-color: transparent;
 }
-/* line 222, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .btn-gallery a {
   color: #292929;
   text-decoration: none;
@@ -13759,14 +13760,14 @@ img {
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* line 231, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .btn-gallery a:hover {
   text-decoration: none;
   color: #E74C3C;
   background-color: #FFFFFF;
 }
 
-/* line 238, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 .effect3 a {
   color: #c1add8;
   overflow: hidden;
@@ -13774,7 +13775,7 @@ img {
   height: 1em;
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .effect3 a span {
   position: relative;
   display: inline-block;
@@ -13783,7 +13784,7 @@ img {
   transition: transform 0.3s;
 }
 
-/* line 249, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .effect3 a span::before {
   color: #440e62;
   position: absolute;
@@ -13795,7 +13796,7 @@ img {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 256, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .effect3 a:hover span,
 .effect3 a:focus span {
   -moz-transform: translateY(-100%);
@@ -13804,7 +13805,17 @@ img {
   transform: translateY(-100%);
 }
 
-/* line 263, ../sass/styles.scss */
+/* line 261, ../sass/styles.scss */
+.setIn {
+  padding-top: 87px;
+}
+
+/* line 264, ../sass/styles.scss */
+.setOut {
+  padding-bottom: 50px;
+}
+
+/* line 270, ../sass/styles.scss */
 .contactIcon {
   display: block;
   width: 40px;
@@ -13816,22 +13827,22 @@ img {
 }
 
 @media (max-width: 767px) {
-  /* line 276, ../sass/styles.scss */
+  /* line 283, ../sass/styles.scss */
   .shapeDivider1, .shapeDivider2 {
     background: transparent;
   }
 
-  /* line 279, ../sass/styles.scss */
+  /* line 286, ../sass/styles.scss */
   #top, #bottom, #left, #right {
     display: none;
   }
 
-  /* line 280, ../sass/styles.scss */
+  /* line 287, ../sass/styles.scss */
   .fp-controlArrow.fp-next {
     right: 10px;
   }
 
-  /* line 283, ../sass/styles.scss */
+  /* line 290, ../sass/styles.scss */
   .fp-controlArrow.fp-prev {
     left: 10px;
   }

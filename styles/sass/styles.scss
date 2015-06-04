@@ -180,6 +180,7 @@ img {
    @include transition(color 0.7s ease);
    &:hover {
     color: $colorFour;
+    text-decoration: none;
    }
 }
 .pointer a:hover {
@@ -256,6 +257,12 @@ img {
 .effect3 a:hover span,
 .effect3 a:focus span {
     @include transform(translateY(-100%));
+}
+.setIn {
+ padding-top:87px;
+}
+.setOut {
+ padding-bottom:50px;
 }
 
 //---------- PART-CONTACT
