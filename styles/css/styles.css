@@ -13835,12 +13835,46 @@ a:hover, a:active, a:focus {
   padding: 15px 15px 25px 15px;
 }
 
+/* line 290, ../sass/styles.scss */
+.filmHighlight {
+  color: #E74C3C;
+}
+
 /* line 293, ../sass/styles.scss */
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 301, ../sass/styles.scss */
+.js-video.widescreen {
+  padding-bottom: 56.34%;
+}
+
+/* line 304, ../sass/styles.scss */
+.js-video.vimeo {
+  padding-top: 0;
+}
+
+/* line 307, ../sass/styles.scss */
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 317, ../sass/styles.scss */
 .inputContactTitle {
   padding-bottom: 30px;
 }
 
-/* line 296, ../sass/styles.scss */
+/* line 320, ../sass/styles.scss */
 input[type="text"], input[type="email"], textarea {
   display: block;
   margin: 0;
@@ -13879,18 +13913,18 @@ input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-inpu
   letter-spacing: 0.5px;
 }
 
-/* line 316, ../sass/styles.scss */
+/* line 340, ../sass/styles.scss */
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   box-shadow: none;
   outline: none;
 }
 
-/* line 321, ../sass/styles.scss */
+/* line 345, ../sass/styles.scss */
 .inputContactMessage {
   padding-top: 40px;
 }
 
-/* line 324, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 .inputContactButton {
   padding: 10px 45px;
   background: transparent;
@@ -13902,29 +13936,29 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* line 332, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 .inputContactButton:hover {
   background-color: #FFFFFF;
   color: #E74C3C;
 }
 
 @media (max-width: 767px) {
-  /* line 341, ../sass/styles.scss */
+  /* line 365, ../sass/styles.scss */
   .shapeDivider1, .shapeDivider2 {
     background: transparent;
   }
 
-  /* line 344, ../sass/styles.scss */
+  /* line 368, ../sass/styles.scss */
   #top, #bottom, #left, #right {
     display: none;
   }
 
-  /* line 345, ../sass/styles.scss */
+  /* line 369, ../sass/styles.scss */
   .fp-controlArrow.fp-next {
     right: 10px;
   }
 
-  /* line 348, ../sass/styles.scss */
+  /* line 372, ../sass/styles.scss */
   .fp-controlArrow.fp-prev {
     left: 10px;
   }
