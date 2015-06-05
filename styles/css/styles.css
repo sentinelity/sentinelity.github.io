@@ -13591,26 +13591,37 @@ html, body {
   font-size: 13px;
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
+.iconSetting {
+  display: block;
+  width: 40px;
+  font-size: 40px;
+  height: 100%;
+  margin: 0 auto;
+  color: #292929;
+  padding: 15px 0;
+}
+
+/* line 117, ../sass/styles.scss */
 .nav-temper {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 113, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .nav-temper h1 {
   color: #FAFAFA;
   font-size: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid #FAFAFA;
 }
-/* line 119, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .nav-temper ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 123, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .nav-temper li > a {
   color: #FAFAFA;
   text-decoration: none;
@@ -13621,12 +13632,12 @@ html, body {
   -o-transition: color 0.7s ease;
   transition: color 0.7s ease;
 }
-/* line 130, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .nav-temper li > a:hover {
   color: #E74C3C;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .cd-nav-trigger:hover {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -13634,19 +13645,19 @@ html, body {
   transform: rotate(180deg);
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .cd-nav-icon {
   -webkit-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
 }
-/* line 140, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .cd-nav-icon:hover {
   background-color: #FAFAFA;
   display: block;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .part-intro {
   position: relative;
   max-width: 700px;
@@ -13654,35 +13665,35 @@ html, body {
   padding: 5%;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 img {
   display: block;
   width: 100%;
 }
 
-/* line 158, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .scene {
   padding: 0;
   margin: 0;
   visibility: hidden;
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .intro:nth-child(1) {
   opacity: 1;
 }
 
-/* line 166, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .intro:nth-child(2) {
   opacity: 0.90;
 }
 
-/* line 169, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .intro:nth-child(3) {
   opacity: 0.95;
 }
 
-/* line 172, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 .pointer {
   display: block;
   width: 30px;
@@ -13695,59 +13706,59 @@ img {
   -o-transition: color 0.7s ease;
   transition: color 0.7s ease;
 }
-/* line 181, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .pointer:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 186, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .pointer a:hover {
   text-decoration: none;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 201, ../sass/styles.scss */
 .shapeDivider1, .shapeDivider2 {
   width: 100vw;
   height: 100vh;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .shapeDivider1 {
   background: url("../../images/build/noise.png") repeat, linear-gradient(to right, #e6e7e8 0%, #e6e7e8 50%, #fafafa 50%, #fafafa 100%);
 }
 
-/* line 200, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 .aboutSpace {
   letter-spacing: 3px;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .shapeDivider2 {
   background: url("../../images/build/noise.png") repeat, linear-gradient(to right, #fafafa 0%, #fafafa 50%, #e6e7e8 50%, #e6e7e8 100%);
 }
 
-/* line 210, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .workSpace {
   letter-spacing: 2px;
 }
 
-/* line 213, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 .btn {
   border-radius: 0;
 }
 
-/* line 216, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .btn-gallery {
   background-color: transparent;
   text-align: center;
 }
-/* line 219, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .btn-gallery:hover {
   color: #E74C3C;
   border-color: transparent;
 }
-/* line 223, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .btn-gallery a {
   color: #292929;
   text-decoration: none;
@@ -13760,89 +13771,113 @@ img {
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* line 232, ../sass/styles.scss */
+/* line 241, ../sass/styles.scss */
 .btn-gallery a:hover {
   text-decoration: none;
   color: #E74C3C;
   background-color: #FFFFFF;
 }
 
-/* line 239, ../sass/styles.scss */
-.effect3 a {
-  color: #c1add8;
-  overflow: hidden;
-  padding: 0 5px;
-  height: 1em;
-}
-
-/* line 245, ../sass/styles.scss */
-.effect3 a span {
-  position: relative;
-  display: inline-block;
-  -webkit-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s;
-}
-
-/* line 250, ../sass/styles.scss */
-.effect3 a span::before {
-  color: #440e62;
-  position: absolute;
-  top: 100%;
-  content: attr(data-hover);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-/* line 257, ../sass/styles.scss */
-.effect3 a:hover span,
-.effect3 a:focus span {
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-
-/* line 261, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .setIn {
   padding-top: 87px;
 }
 
-/* line 264, ../sass/styles.scss */
+/* line 251, ../sass/styles.scss */
 .setOut {
   padding-bottom: 50px;
 }
 
-/* line 270, ../sass/styles.scss */
-.contactIcon {
+/* line 257, ../sass/styles.scss */
+.inputContactTitle {
+  padding-bottom: 30px;
+}
+
+/* line 260, ../sass/styles.scss */
+input[type="text"], input[type="email"], textarea {
   display: block;
-  width: 40px;
-  font-size: 40px;
-  height: 100%;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  padding: 10px 0;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  font-family: 'Merriweather', serif;
+}
+/* line 61, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder, textarea:-moz-placeholder {
   color: #292929;
-  padding: 30px 0;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+/* line 64, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, textarea::-moz-placeholder {
+  color: #292929;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+/* line 67, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #292929;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+/* line 56, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #292929;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* line 280, ../sass/styles.scss */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* line 285, ../sass/styles.scss */
+.inputContactMessage {
+  padding-top: 40px;
+}
+
+/* line 288, ../sass/styles.scss */
+.inputContactButton {
+  padding: 10px 45px;
+  background: transparent;
+  border: 1px solid #E74C3C;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  outline: none;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+/* line 296, ../sass/styles.scss */
+.inputContactButton:hover {
+  background-color: #FFFFFF;
+  color: #E74C3C;
 }
 
 @media (max-width: 767px) {
-  /* line 283, ../sass/styles.scss */
+  /* line 306, ../sass/styles.scss */
   .shapeDivider1, .shapeDivider2 {
     background: transparent;
   }
 
-  /* line 286, ../sass/styles.scss */
+  /* line 309, ../sass/styles.scss */
   #top, #bottom, #left, #right {
     display: none;
   }
 
-  /* line 287, ../sass/styles.scss */
+  /* line 310, ../sass/styles.scss */
   .fp-controlArrow.fp-next {
     right: 10px;
   }
 
-  /* line 290, ../sass/styles.scss */
+  /* line 313, ../sass/styles.scss */
   .fp-controlArrow.fp-prev {
     left: 10px;
   }

@@ -13,6 +13,10 @@ watch: {
      js: {
            files: ['javascripts/**/*.js'],
            tasks: ['uglify']
+     },
+     cssmin: {
+           files: ['styles/**/styles.css'],
+           tasks: ['cssmin']
      }
 },
     
@@ -44,6 +48,18 @@ uglify: {
   },
 },
     
+cssmin: {
+  target: {
+    files: [{
+      expand: true,
+      cwd: 'styles/css',
+      src: ['*.css', '!*.min.css'],
+      dest: 'styles/css',
+      ext: '.min.css'
+    }]
+  }
+},
+    
 imagemin: {
     dynamic: {
         files: [{
@@ -60,8 +76,9 @@ imagemin: {
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-compass');
 
 // Default task(s).
-grunt.registerTask('default', ['compass:dev' , 'uglify' , 'imagemin' , 'watch']);
+grunt.registerTask('default', ['compass:dev' , 'uglify' , 'cssmin' , 'imagemin' , 'watch']);
 };

@@ -11,7 +11,7 @@
       The Portfolio of Kelly Wong
     </title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/css/styles.css" rel="stylesheet">
+    <link href="styles/css/styles.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Oswald:400,700|' rel='stylesheet' type='text/css'> 
   </head>
   <body>
@@ -74,10 +74,12 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-centered animateOne">
-                        <h4 class="text-center">/\/</h4>
+                        <div class="col-md-12 col-centered">
+                            <span class="iconSetting glyphicon glyphicon-bishop" aria-hidden="true"></span>
+                         </div>
                         <h1 class="text-center">HELLO THERE,</h1>
                         <h3 class="text-center aboutSpace">MY NAME IS KELLY WONG.</h3>
-                        <p class="text-justify">I'm a 22 year-old designer/front end web developer who currently resides in New York.  I love scouring the web for hidden gems and I get a little too excited when it comes to beautiful type fonts--especially free ones.  As a self-taught developer, I'm quick on the uptake and I'm not afraid to get my hands dirty.  Aside from that, I do photography and film in my spare time and I absolutely adore my Nikon DSLR.</p>
+                        <p class="text-justify">I'm a designer/front end web developer who currently resides in New York.  I love scouring the web for hidden gems and I get a little too excited when it comes to beautiful type fonts--especially free ones.  As a self-taught developer, I'm quick on the uptake and I'm not afraid to get my hands dirty.  Aside from that, I do photography and film in my spare time and I absolutely adore my Nikon DSLR.</p>
                     </div>
                 </div>
             </div> 
@@ -92,7 +94,9 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-centered animateTwo">
-                        <h4 class="text-center">\/\</h4>
+                        <div class="col-md-12 col-centered">
+                            <span class="iconSetting glyphicon glyphicon-knight" aria-hidden="true"></span>
+                         </div>
                         <h1 class="text-center">WORK / PLAY</h1>
                         <h3 class="text-center workSpace">CLICK ON THE ARROWS</h3>
                     </div>
@@ -104,7 +108,10 @@
                 <div class="row row-centered">
                     <div class="col-md-6 col-sm-6 col-centered">
                         <div class="col-md-8 col-sm-3 col-centered">
-                        <img src="images/build/gal-Two.png"/>
+                <ul class="scene fadeIn">
+                <li class="layer" data-depth="0.15"><img src="images/build/gal-Two-1.png"> 
+                <li class="layer" data-depth="0.30"><img src="images/build/galFrame.png">
+		        </ul>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-centered animateTwo">
@@ -122,7 +129,10 @@
                 <div class="row row-centered">
                     <div class="col-md-6 col-sm-6 col-centered">
                         <div class="col-md-8 col-sm-3 col-centered">
-                        <img src="images/build/gal-Three.png"/>
+                <ul class="scene fadeIn">
+                <li class="layer" data-depth="0.15"><img src="images/build/gal-Three-1.png"> 
+                <li class="layer" data-depth="0.30"><img src="images/build/galFrame.png">
+		        </ul>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-centered animateTwo">
@@ -140,7 +150,10 @@
                 <div class="row row-centered">
                     <div class="col-md-6 col-sm-6 col-centered">
                         <div class="col-md-8 col-sm-3 col-centered">
-                        <img src="images/build/gal-Four.png"/>
+                <ul class="scene fadeIn">
+                <li class="layer" data-depth="0.15"><img src="images/build/gal-Four-1.png"> 
+                <li class="layer" data-depth="0.30"><img src="images/build/galFrame.png">
+		        </ul>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-centered animateTwo">
@@ -157,18 +170,28 @@
         <div class="section">
             <div class="container init-everything part-contact">
                 <div class="row row-centered">
+                         <div class="col-md-12 col-centered">
+                            <span class="iconSetting glyphicon glyphicon-tower" aria-hidden="true"></span>
+                         </div>
                     <div class="col-md-6 col-centered">
-                        <h1 class="text-center">LET'S WORK TOGETHER!</h1>
-                    <div class="col-md-6 col-xs-12 col-centered">
-                        <span class="contactIcon glyphicon glyphicon-earphone" aria-hidden="true"></span>
-                        <h3 class="text-center">GIVE ME A RING</h3>
-                        <p class="text-center">646 247 2197</p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 col-centered">
-                        <span class="contactIcon glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                        <h3 class="text-center">SEND ME AN EMAIL</h3>
-                        <p class="text-center">kellymin.wo@gmail.com</p>
-                    </div>    
+                        <h1 class="text-center inputContactTitle">LET'S WORK TOGETHER!</h1>
+                    <div class="col-md-12 col-xs-12 col-centered">
+                        <form action="https://formspree.io/kellymin.wo@gmail.com" method="POST">
+                            <div class="col-md-6">
+                            <input placeholder="name" type="text" name="name">
+                            </div>
+                            <div class="col-md-6">
+                            <input placeholder="email" type="email" name="_replyto">
+                            </div>
+                            <div class="col-md-12">
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <textarea class="inputContactMessage" rows="6" placeholder="message" name="body"></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                            <input class="inputContactButton" type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div> 
                     </div>
                 </div>
             </div>
@@ -197,10 +220,6 @@
 			<div class="cd-panel-content">
 				<div class="row no-gutters">
                 <div class="col-xs-12 col-sm-12"><img src="images/build/Walker_Final.png" alt="walker"></div>
-        <div class="col-xs-12 col-sm-6"><img src="images/build/p1.png"></div>
-        <div class="col-xs-12 col-sm-6"><img src="images/build/p2.png"></div>
-        <div class="col-xs-12 col-sm-6"><img src="images/build/p3.png"></div>
-        <div class="col-xs-12 col-sm-6"><img src="images/build/p4.png"></div>
         <div class="col-xs-12 col-sm-12 setOut"></div>
                 </div>
 			</div>

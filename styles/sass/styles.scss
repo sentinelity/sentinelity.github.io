@@ -102,6 +102,15 @@ html,body {
     font-size: 13px;
   }
 }
+.iconSetting {
+   display:block;
+   width:40px;
+   font-size: 40px;
+   height: 100%;
+   margin: 0 auto;
+   color: $colorThree;
+   padding: 15px 0;
+}
 
 //---------- NAVIGATION
 
@@ -236,28 +245,6 @@ img {
       }
     }
 }
-.effect3 a {
-	color: #c1add8;
-	overflow: hidden;
-	padding: 0 5px;
-	height: 1em;
-}
-.effect3 a span {
-	position: relative;
-	display: inline-block;
-    @include transition(transform 0.3s);
-}
-.effect3 a span::before {
-	color: #440e62;
-	position: absolute;
-	top: 100%;
-	content: attr(data-hover);
-    @include transform(translate3d(0,0,0));
-}
-.effect3 a:hover span,
-.effect3 a:focus span {
-    @include transform(translateY(-100%));
-}
 .setIn {
  padding-top:87px;
 }
@@ -267,15 +254,51 @@ img {
 
 //---------- PART-CONTACT
 
-.contactIcon {
-   display:block;
-   width:40px;
-   font-size: 40px;
-   height: 100%;
-   margin: 0 auto;
-   color: $colorThree;
-   padding: 30px 0;
+.inputContactTitle {
+  padding-bottom: 30px;   
 }
+%inputForm {
+  display: block;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  padding: 10px 0;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  font-family: 'Merriweather', serif;
+  @include input-placeholder {
+    color: $colorThree;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+}
+input[type="text"], input[type="email"], textarea {
+  @extend %inputForm;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+.inputContactMessage {
+  padding-top: 40px;
+}
+.inputContactButton {
+  padding: 10px 45px;
+  background: transparent;
+  border: 1px solid $colorOne;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  outline: none;
+  @include transition(all 0.7s ease);
+    &:hover {
+      background-color: $colorFour;
+      color: $colorOne;
+    }
+}
+
 
 //---------- MEDIA QUERIES
 
