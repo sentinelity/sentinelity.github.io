@@ -278,10 +278,14 @@ a:hover, a:active, a:focus {
     }
 }
 .modal-header {
-   border-bottom: none;   
+   border-bottom: none;
+   padding: 15px 15px 0 15px;
 }
 .modal-content {
    border-radius: 0;   
+}
+.modal-body {
+   padding: 15px 15px 25px 15px;   
 }
 
 //---------- PART-CONTACT

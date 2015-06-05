@@ -13822,19 +13822,25 @@ a:hover, a:active, a:focus {
 /* line 280, ../sass/styles.scss */
 .modal-header {
   border-bottom: none;
+  padding: 15px 15px 0 15px;
 }
 
-/* line 283, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 .modal-content {
   border-radius: 0;
 }
 
-/* line 289, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
+.modal-body {
+  padding: 15px 15px 25px 15px;
+}
+
+/* line 293, ../sass/styles.scss */
 .inputContactTitle {
   padding-bottom: 30px;
 }
 
-/* line 292, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 input[type="text"], input[type="email"], textarea {
   display: block;
   margin: 0;
@@ -13873,18 +13879,18 @@ input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-inpu
   letter-spacing: 0.5px;
 }
 
-/* line 312, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   box-shadow: none;
   outline: none;
 }
 
-/* line 317, ../sass/styles.scss */
+/* line 321, ../sass/styles.scss */
 .inputContactMessage {
   padding-top: 40px;
 }
 
-/* line 320, ../sass/styles.scss */
+/* line 324, ../sass/styles.scss */
 .inputContactButton {
   padding: 10px 45px;
   background: transparent;
@@ -13896,29 +13902,29 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* line 328, ../sass/styles.scss */
+/* line 332, ../sass/styles.scss */
 .inputContactButton:hover {
   background-color: #FFFFFF;
   color: #E74C3C;
 }
 
 @media (max-width: 767px) {
-  /* line 337, ../sass/styles.scss */
+  /* line 341, ../sass/styles.scss */
   .shapeDivider1, .shapeDivider2 {
     background: transparent;
   }
 
-  /* line 340, ../sass/styles.scss */
+  /* line 344, ../sass/styles.scss */
   #top, #bottom, #left, #right {
     display: none;
   }
 
-  /* line 341, ../sass/styles.scss */
+  /* line 345, ../sass/styles.scss */
   .fp-controlArrow.fp-next {
     right: 10px;
   }
 
-  /* line 344, ../sass/styles.scss */
+  /* line 348, ../sass/styles.scss */
   .fp-controlArrow.fp-prev {
     left: 10px;
   }
