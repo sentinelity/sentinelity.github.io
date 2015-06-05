@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['home', 'about', 'work', 'contact'],
-    sectionsColor: ['#FAFAFA', '#E6E7E8', '#FAFAFA', '#E6E7E8'],
+    anchors: ['home', 'about', 'work', 'film', 'contact'],
+    sectionsColor: ['#FAFAFA', '#E6E7E8', '#FAFAFA', '#FAFAFA', '#E6E7E8'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['HOME', 'ABOUT', 'WORK', 'CONTACT'],

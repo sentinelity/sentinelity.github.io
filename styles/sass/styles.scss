@@ -196,6 +196,10 @@ img {
    text-decoration: none;  
 }
 
+a:hover, a:active, a:focus {
+   text-decoration: none;  
+}
+
 //---------- PART-ABOUT
 
 %setDivider {
@@ -252,6 +256,34 @@ img {
  padding-bottom:50px;
 }
 
+//---------- PART-FILM
+
+.film {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  margin-top: 20px;
+}
+.filmInfo {
+  font-size: 25px;
+  color: $colorOne;
+  display:block;
+  width:40px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  @include transition(all 0.7s ease);
+    &:hover {
+     color: $colorThree;   
+    }
+}
+.modal-header {
+   border-bottom: none;   
+}
+.modal-content {
+   border-radius: 0;   
+}
+
 //---------- PART-CONTACT
 
 .inputContactTitle {
@@ -298,7 +330,6 @@ input[type="text"], input[type="email"], textarea {
       color: $colorOne;
     }
 }
-
 
 //---------- MEDIA QUERIES
 
